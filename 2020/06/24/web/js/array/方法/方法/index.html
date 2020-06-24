@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		web/js/array/方法/方法 | 
+	 
+	Hexo
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+  
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">Hexo</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+
+		<li class="menu-item">
+			<a href="https://github.com/account" class="menu-item-link" target="_blank">
+				oliverBin
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="https://github.com/lovedwhom" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/hello-world/">
+										hello-world
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										web
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										api
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										BroadcastChannel
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/api/BroadcastChannel/BroadcastChannel/">
+										BroadcastChannel
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css计数器
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E8%AE%A1%E6%95%B0%E5%99%A8/counter-increment/">
+										counter-increment
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E8%AE%A1%E6%95%B0%E5%99%A8/counter-reset/">
+										counter-reset
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E8%AE%A1%E6%95%B0%E5%99%A8/counter/">
+										counter
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css选择器
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/ID%E9%80%89%E6%8B%A9%E5%99%A8/">
+										ID选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E4%BC%AA%E7%B1%BB/">
+										伪类
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8/">
+										元素选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%90%8E%E4%BB%A3%E9%80%89%E6%8B%A9%E5%99%A8/">
+										后代选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%AD%90%E9%80%89%E6%8B%A9%E5%99%A8/">
+										子选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8/">
+										属性选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E7%9B%B8%E9%82%BB%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8/">
+										相邻兄弟选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/">
+										类选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E9%80%9A%E7%94%A8%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8/">
+										通用兄弟选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E9%80%9A%E9%85%8D%E9%80%89%E6%8B%A9%E5%99%A8/">
+										通配选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										tabel table-cel
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/tabel%20table-cel/table/">
+										table
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										html
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										dom
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										宽高
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/dom/%E5%AE%BD%E9%AB%98/dom%E5%85%83%E7%B4%A0%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6/">
+										dom元素宽度和高度
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										window
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										scroll
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/window/scroll/scroll/">
+										scroll
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										ubtitile
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/window/ubtitile/%E6%BB%9A%E5%8A%A8/">
+										滚动
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										window 窗口高度和宽度
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/window/window%20%E7%AA%97%E5%8F%A3%E9%AB%98%E5%BA%A6%E5%92%8C%E5%AE%BD%E5%BA%A6/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6/">
+										宽度和高度
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										js
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										array
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										创建
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%88%9B%E5%BB%BA/%E6%95%B0%E7%BB%84%E5%88%9B%E5%BB%BA/">
+										数组创建
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%88%A4%E6%96%AD%E6%95%B0%E7%BB%84/">
+										判断数组
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										合并
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%90%88%E5%B9%B6/%E5%90%88%E5%B9%B6/">
+										合并
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										复制
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%A4%8D%E5%88%B6/%E5%A4%8D%E5%88%B6/">
+										复制
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										方法
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E6%96%B9%E6%B3%95/map/">
+										map
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2020/06/24/web/js/array/%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95/">
+										方法
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										es6
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/es6/array/">
+										array
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/es6/promise/">
+										promise
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										event Loop
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/event%20Loop/event%20Loop/">
+										event Loop
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/event%20Loop/%E6%A0%88/">
+										栈
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										function
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/function/this/">
+										this
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/function/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/">
+										箭头函数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										操纵符
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/%E6%93%8D%E7%BA%B5%E7%AC%A6/new/">
+										new
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										npm
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/npm/A-npm/">
+										A-npm
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										trivial_knowledge
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/trivial_knowledge/documentElement/">
+										documentElement
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										webpack-cli
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack-cli/00-webpack-cli/">
+										00-webpack-cli
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack-cli/01-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+										01-常用命令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										webpack
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/01-%E5%8D%A0%E4%BD%8D%E7%AC%A6/">
+										01-占位符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/02-import/">
+										02-import
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/03-require/">
+										03-require
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/99-%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93/">
+										99-配置总结
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/base/">
+										base
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										config
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/01-%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/">
+										01-核心概念
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										context
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/context/A-context/">
+										A-context
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										entry
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/entry/A-entry/">
+										A-entry
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										mode
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/mode/A-mode/">
+										A-mode
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										module
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/00-module/">
+										00-module
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/01-noparse/">
+										01-noparse
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										rules
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/rules/00-rules/">
+										00-rules
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/rules/03-parser/">
+										03-parser
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										optimization
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/optimization/A-optimization/">
+										A-optimization
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										output
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/00-output/">
+										00-output
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/05-externals/">
+										05-externals
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/06-target/">
+										06-target
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/07-devtool/">
+										07-devtool
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										plugins
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/plugins/A-plugins/">
+										A-plugins
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										resolve
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/resolve/00-resolve/">
+										00-resolve
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/resolve/01-extensions/">
+										01-extensions
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/resolve/02-alias/">
+										02-alias
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+
+	方法
+</h1>
+<div class="article-meta">
+	
+	<span>bin</span>
+	<span>2020-06-24 15:06:45</span>
+    
+		<div id="article-categories">
+            
+		</div>
+    
+</div>
+
+<div id="article-content">
+	<h1 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h1><h3 id="Array-from"><a href="#Array-from" class="headerlink" title="Array.from"></a>Array.from</h3><p> 将伪数组对象或可遍历对象转换为真数组</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const arr &#x3D; Array.from(&#123;length:3&#125;)</span><br></pre></td></tr></table></figure>
+<p>伪数组对象: 如果一个对象得所有简明都是正整数或零 并且有length属性 那么这个对象就很像数组<br>可迭代对象： 在ES6 中常用得集合对象(数组、Set/Map)和字符串都是可迭代对象</p>
+<h4 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h4><p>Array.from 接受三个参数<br>input  </p>
+<pre><code>Array.from(&apos;foo&apos;)</code></pre><p>map 可选<br>    在最后生成得数组上在执行一次map方法在返回  相当于Array.from(obj).map(mapFn, thisArg)</p>
+<pre><code>Array.from([1, 2, 3], x =&gt; x + x)  </code></pre><p>context 可选 执行回调函数 mapFn 时 this 对象。<br>我们可以将被处理的数据和处理对象分离，将各种不同的处理数据的方法封装到不同的的对象中去，处理方法采用相同的名字</p>
+<pre><code>classA ={
+    handle:function(n){
+        return n +2
+    }
+}
+Array.from([1,2,3,4,5],funtion(x){this.handle(x),classA})</code></pre><h2 id="Array-of"><a href="#Array-of" class="headerlink" title="Array.of"></a>Array.of</h2><p>创建一个具有可变数量参数的新数组实例,而不考录参数的数量或类型</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Array.of(7);       &#x2F;&#x2F; [7] </span><br><span class="line">Array.of(1, 2, 3); &#x2F;&#x2F; [1, 2, 3]</span><br><span class="line"></span><br><span class="line">Array(7);          &#x2F;&#x2F; [ , , , , , , ]</span><br><span class="line">Array(1, 2, 3);    &#x2F;&#x2F; [1, 2, 3]</span><br></pre></td></tr></table></figure>
+<h2 id="Array-isArray"><a href="#Array-isArray" class="headerlink" title="Array.isArray()"></a>Array.isArray()</h2><p>用于确定传递的值是否是一个Array</p>
+<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><p>true 或 false</p>
+<h4 id="instanceof-和isArray"><a href="#instanceof-和isArray" class="headerlink" title="instanceof 和isArray"></a>instanceof 和isArray</h4><p>isArray 能检测iframes  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var iframe &#x3D; document.createElement(&#39;iframe&#39;);</span><br><span class="line">document.body.appendChild(iframe);</span><br><span class="line">xArray &#x3D; window.frames[window.frames.length-1].Array;</span><br><span class="line">var arr &#x3D; new xArray(1,2,3); &#x2F;&#x2F; [1,2,3]</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; Correctly checking for Array</span><br><span class="line">Array.isArray(arr);  &#x2F;&#x2F; true</span><br><span class="line">&#x2F;&#x2F; Considered harmful, because doesn&#39;t work though iframes</span><br><span class="line">arr instanceof Array; &#x2F;&#x2F; false</span><br></pre></td></tr></table></figure>
+
+<h4 id="concat"><a href="#concat" class="headerlink" title="concat"></a>concat</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> const arr1 &#x3D; [1,2,3];</span><br><span class="line">console.log(arr1.concat([2,3,4]))</span><br><span class="line">console.log(arr1.concat(1,2,3,4));</span><br></pre></td></tr></table></figure>
+<p>参数<br>将数组和或值连接成数组，如果省略了valueN参数 则concat则返回一个它所调用的已存在的数组的浅拷贝</p>
+<h4 id="copyWithin"><a href="#copyWithin" class="headerlink" title="copyWithin"></a>copyWithin</h4><p>浅复制数组得一部分到统一数组得另一位之，并返回他<br>改变原数组 但不会改变原来数组得长度</p>
+<h5 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h5><p>arr.copyWithin(target[, start[, end]])<br>参数<br>target<br>0为基底得索引，复制序列到该位置<br>如果为负数target将从末尾开始计算<br>如果大于arr.length将不会发生拷贝<br>如果target在start之后 复制的秀娥将被裁剪以符合ar.length  </p>
+<p>start<br>开始复制元素得启示位置，<br>如果为负数 将从末尾开始计算<br>如果start被忽略 将从0开始复制  相当于arr.length+ start<br>end<br>复制元素得结束位置<br> 不包括如果为负数将从末尾计算  相当于arr.length+ end<br>如果被忽略，将复制到数组结尾 </p>
+<p>start&gt; end 将不会复制<br>target&gt;arr.length不会复制  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">let arr &#x3D; [0,1,2,3,4,5];</span><br><span class="line">  &#x2F;&#x2F; let arr2 &#x3D; arr.copyWithin(0,3,5);</span><br><span class="line">  &#x2F;&#x2F; console.log(arr2)</span><br><span class="line">  &#x2F;&#x2F; console.log(arr)</span><br><span class="line">  &#x2F;&#x2F; let arr3 &#x3D; arr.copyWithin(5,3,5);</span><br><span class="line">  &#x2F;&#x2F; console.log(arr3)</span><br><span class="line">  &#x2F;&#x2F; let arr4 &#x3D; arr.copyWithin(0,-1,-2);</span><br><span class="line">  &#x2F;&#x2F; console.log(arr4)</span><br><span class="line">  &#x2F;&#x2F; let arr5 &#x3D; arr.copyWithin(0,-2,-1);</span><br><span class="line">  &#x2F;&#x2F; console.log(arr5)</span><br><span class="line">  &#x2F;&#x2F; let arr6 &#x3D; arr.copyWithin(0,4,3);</span><br><span class="line">  &#x2F;&#x2F; console.log(arr6)</span><br></pre></td></tr></table></figure>
+
+<h4 id="array-entries"><a href="#array-entries" class="headerlink" title="array.entries"></a>array.entries</h4><p>返回一个新的Array Iterator对象 该对象包含数组中每个索引得键/值对</p>
+<h5 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a>语法</h5><p>arr.entries()  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let arr &#x3D;[0,1,2,3,4,5];</span><br><span class="line">   let iterator &#x3D;arr.entries();</span><br><span class="line">   iterator.next&#123; value: Array(2), done: false &#125;</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="every"><a href="#every" class="headerlink" title="every"></a>every</h4><p>every() 方法测试一个数组内的所有元素是否都能通过某个指定函数的测试。它返回一个布尔值。  </p>
+<p>注意：若收到一个空数组，此方法在一切情况下都会返回 true。</p>
+<h5 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h5><p>callback<br>用来测试每个元素的函数，它可以接收三个参数：<br>    element<br>    用于测试的当前值。<br>    index可选<br>    用于测试的当前值的索引。<br>    array可选<br>    调用 every 的当前数组。<br>thisArg<br>执行 callback 时使用的 this 值。<br>如果省略该参数 则callback被调用时得this 在非严格模式下为全局对象，在严格模式下参入undefined</p>
+<p>如果数组为空 无论如何都返回true</p>
+<h4 id="fill"><a href="#fill" class="headerlink" title="fill"></a>fill</h4><p>fill() 方法用一个固定值填充一个数组中从起始索引到终止索引内的全部元素。不包括终止索引。<br>改变原数组</p>
+<p>参数<br>value<br>用来填充数组元素的值。<br>start 可选<br>起始索引，默认值为0。<br>end 可选<br>终止索引，默认值为 this.length</p>
+<p>如果start为负数 则索引被计算 length+ start<br>如果end为负数 则结束索引会被自动计算length  + end<br>start 省略从开始<br>end 省略 默认到结束<br>start&gt;end 不生效  </p>
+<h4 id="find"><a href="#find" class="headerlink" title="find"></a>find</h4><p>find方法返回数组中满足提供得测试函数得第一个元素得值，否则返回undefined</p>
+<p>arr.find(callback[, thisArg])<br>参数<br>callback<br>用来测试每个元素的函数，它可以接收三个参数：<br>    element<br>    用于测试的当前值。<br>    index可选<br>    用于测试的当前值的索引。<br>    array可选<br>    调用 every 的当前数组。<br>thisArg<br>执行 callback 时使用的 this 值。  </p>
+<h4 id="findIndex"><a href="#findIndex" class="headerlink" title="findIndex"></a>findIndex</h4><p>findIndex()方法返回数组中满足提供的测试函数的第一个元素的索引。否则返回-1。<br>语法<br>arr.findIndex(callback[, thisArg])<br>参数<br>callback<br>用来测试每个元素的函数，它可以接收三个参数：<br>    element<br>    用于测试的当前值。<br>    index可选<br>    用于测试的当前值的索引。<br>    array可选<br>    调用 every 的当前数组。<br>thisArg<br>执行 callback 时使用的 this 值。  </p>
+<h4 id="flat"><a href="#flat" class="headerlink" title="flat"></a>flat</h4><p>flat() 方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。</p>
+<p>语法<br>var newArray = arr.flat([depth])<br>参数<br>depth 可选<br>指定要提取嵌套数组的结构深度，默认值为 1。<br>最大值 Infinity 可展开任意深度得嵌套数组</p>
+<p>flat方法会一处数组中得空项</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var arr4 &#x3D; [1, 2, , 4, 5];</span><br><span class="line">arr4.flat();</span><br><span class="line">&#x2F;&#x2F; [1, 2, 4, 5]</span><br></pre></td></tr></table></figure>
+
+<h4 id="flatMap"><a href="#flatMap" class="headerlink" title="flatMap"></a>flatMap</h4><p>flatMap 方法首先使用映射函数映射每个元素，然后将结果压缩成一个新数组。它与map 连着深度值为1得flat几乎相同，但flatMap通常与合并成一种方法得效率稍微高些</p>
+<h5 id="语法-2"><a href="#语法-2" class="headerlink" title="语法"></a>语法</h5><p>var new_array = arr.flatMap(function callback(currentValue[, index[, array]]) {<br>    // return element for new_array<br>}[, thisArg])</p>
+<h5 id="参数-1"><a href="#参数-1" class="headerlink" title="参数"></a>参数</h5><p>callback<br>可以生成一个新数组中的元素的函数，可以传入三个参数：<br>currentValue<br>当前正在数组中处理的元素<br>index可选<br>可选的。数组中正在处理的当前元素的索引。<br>array可选<br>可选的。被调用的 map 数组<br>thisArg可选<br>可选的。执行 callback 函数时 使用的this 值。  </p>
+<h5 id="返回值-1"><a href="#返回值-1" class="headerlink" title="返回值"></a>返回值</h5><p>一个新的数组，其中每个元素都是回调函数得结果，并且结构深度depth 值为1  </p>
+<h4 id="foreach"><a href="#foreach" class="headerlink" title="foreach"></a>foreach</h4><p>forEach 方法对数组得每个元素执行一次提供的函数</p>
+<h5 id="语法-3"><a href="#语法-3" class="headerlink" title="语法"></a>语法</h5><p>arr.forEach(callback(currentValue [, index [, array]])[, thisArg]);</p>
+<h5 id="参数-2"><a href="#参数-2" class="headerlink" title="参数"></a>参数</h5><p>可以生成一个新数组中的元素的函数，可以传入三个参数：<br>currentValue<br>当前正在数组中处理的元素<br> index可选<br> 可选的。数组中正在处理的当前元素的索引。<br> array可选<br> 可选的。被调用的 map 数组<br> thisArg可选<br>可选的。执行 callback 函数时 使用的this 值。  </p>
+<h4 id="includes"><a href="#includes" class="headerlink" title="includes"></a>includes</h4><p>方法用来判断一个数组是否包含一个指定的值，根据情况，如果包含返回true，否则返回false  </p>
+<h5 id="语法-4"><a href="#语法-4" class="headerlink" title="语法"></a>语法</h5><p>arr.includes(valueToFind[, fromIndex]) </p>
+<h5 id="参数-3"><a href="#参数-3" class="headerlink" title="参数"></a>参数</h5><p>valueToFind 需要查找的元素值 却分大小写  </p>
+<p>fromeIndex 可选<br>从fromIndex 索引处开始查找valueToFind<br>如果为负值  则按升序从array.length +fromIndex 的索引开始搜 默认为0  </p>
+<h4 id="indexOf"><a href="#indexOf" class="headerlink" title="indexOf"></a>indexOf</h4><p>方法返回在数组中可以找到一个给定元素的第一个索引，如果不存在则返回-1</p>
+<h5 id="语法-5"><a href="#语法-5" class="headerlink" title="语法"></a>语法</h5><p>arr.indexOf(searchElement[, fromIndex]) </p>
+<h5 id="参数-4"><a href="#参数-4" class="headerlink" title="参数"></a>参数</h5><p>searchElement<br>要查找的元素<br>fromIndex 可选<br>开始查找的位置。如果该索引值大于或等于数组长度，意味着不会在数组里查找，返回-1。<br>如果参数中提供的索引值是一个负值，则将其作为数组末尾的一个抵消，即-1表示从最后一个元素开始查找，-2表示从倒数第二个元素开始查找 ，以此类推。<br>注意：如果参数中提供的索引值是一个负值，并不改变其查找顺序，查找顺序仍然是从前向后查询数组。如果抵消后的索引值仍小于0，则整个数组都将会被查询。其默认值为0.</p>
+<h4 id="join"><a href="#join" class="headerlink" title="join"></a>join</h4><p>方法及那个一个数组的所有元素连接成一个字符串并返回这个字符串。<br>如果数组只有一个项目，那么将返回该项目而不适用分隔符  </p>
+<h5 id="语法-6"><a href="#语法-6" class="headerlink" title="语法"></a>语法</h5><p>arr.join([separator])  </p>
+<h5 id="参数-5"><a href="#参数-5" class="headerlink" title="参数"></a>参数</h5><p>separator 可选 指定一个字符串来分割数组的每个元素，将分割符转换为字符串。<br>如果缺省该值 数组元素使用,分割<br>null 或undefined 转为空字符串</p>
+<h5 id="返回值-2"><a href="#返回值-2" class="headerlink" title="返回值"></a>返回值</h5><p>一个所有数组元素连接的字符串，如果arr.length为0 则返回空字符串  </p>
+<h4 id="keys"><a href="#keys" class="headerlink" title="keys"></a>keys</h4><p>方法返回一个包含数组中每个索引键的Array Interator 对象  </p>
+<h5 id="语法-7"><a href="#语法-7" class="headerlink" title="语法"></a>语法</h5><p>arr.keys()  </p>
+<h5 id="返回值-3"><a href="#返回值-3" class="headerlink" title="返回值"></a>返回值</h5><p>一个新的Array迭代器对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var arr &#x3D; [&quot;a&quot;, , &quot;c&quot;];</span><br><span class="line">var sparseKeys &#x3D; Object.keys(arr);</span><br><span class="line">var denseKeys &#x3D; [...arr.keys()];</span><br><span class="line">console.log(sparseKeys); &#x2F;&#x2F; [&#39;0&#39;, &#39;2&#39;]</span><br><span class="line">console.log(denseKeys);  &#x2F;&#x2F; [0, 1, 2]</span><br></pre></td></tr></table></figure>
+
+<h4 id="lastIndexOF"><a href="#lastIndexOF" class="headerlink" title="lastIndexOF"></a>lastIndexOF</h4><p>方法返回指定元素在数组中的最后一个的索引，如果不存在则返回-1<br>从数组的后面向前查找，从fromIndex开始  </p>
+<h5 id="语法-8"><a href="#语法-8" class="headerlink" title="语法"></a>语法</h5><p>arr.lastIndexOf(searchElement[, fromIndex])</p>
+<h5 id="参数-6"><a href="#参数-6" class="headerlink" title="参数"></a>参数</h5><p>searchElement<br>被查找的元素。   使用严格相等比较<br>fromIndex 可选<br>从此位置开始逆向查找。默认为数组的长度减 1(arr.length - 1)，即整个数组都被查找。<br>如果该值大于或等于数组的长度，则整个数组会被查找。<br>如果为负值，将其视为从数组末尾向前的偏移。即使该值为负，数组仍然会被从后向前查找。<br>如果该值为负时，其绝对值大于数组长度，则方法返回 -1，即数组不会被查找</p>
+<h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><p>方法创建一个新数组，其结果是该数组中的每个元素都调用一个提供的函数后返回的结果  </p>
+<h5 id="语法-9"><a href="#语法-9" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var new_array &#x3D; arr.map(function callback(currentValue[, index[, array]]) &#123;</span><br><span class="line"> &#x2F;&#x2F; Return element for new_array </span><br><span class="line">&#125;[, thisArg])</span><br></pre></td></tr></table></figure>
+
+<h4 id="pop"><a href="#pop" class="headerlink" title="pop"></a>pop</h4><p>方法从数组中删除最后一个元素，并返回该元素的值，此方法更改数组的长度</p>
+<h5 id="语法-10"><a href="#语法-10" class="headerlink" title="语法"></a>语法</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.pop()</span><br></pre></td></tr></table></figure>
+
+<h4 id="push"><a href="#push" class="headerlink" title="push"></a>push</h4><p>方法将一个或多个元素添加到数组的末尾，并返回该数组的长度</p>
+<h5 id="语法-11"><a href="#语法-11" class="headerlink" title="语法"></a>语法</h5><p>arr.push(element1, …, elementN)</p>
+<h5 id="参数-7"><a href="#参数-7" class="headerlink" title="参数"></a>参数</h5><p>elementN<br>被添加到数组末尾的元素。</p>
+<h5 id="返回值-4"><a href="#返回值-4" class="headerlink" title="返回值"></a>返回值</h5><p>调用该方法时，新的lengh属性值将被返回</p>
+<h4 id="reduce"><a href="#reduce" class="headerlink" title="reduce"></a>reduce</h4><p>方法对数组中的每个元素执行一个有你提供的reduce函数(升序执行性)，将其结果汇总为单个返回值</p>
+<h5 id="语法-12"><a href="#语法-12" class="headerlink" title="语法"></a>语法</h5><p>arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])</p>
+<h5 id="参数-8"><a href="#参数-8" class="headerlink" title="参数"></a>参数</h5><p>callback<br>执行数组中每个值 (如果没有提供 initialValue则第一个值除外)的函数，包含四个参数：<br>accumulator<br>累计器累计回调的返回值; 它是上一次调用回调时返回的累积值，或initialValue（见于下方）。</p>
+<p>currentValue<br>数组中正在处理的元素。<br>index 可选<br>数组中正在处理的当前元素的索引。 如果提供了initialValue，则起始索引号为0，否则从索引1起始。<br>array可选<br>调用reduce()的数组<br>initialValue可选<br>作为第一次调用 callback函数时的第一个参数的值。 如果没有提供初始值，则将使用数组中的第一个元素。 在没有初始值的空数组上调用 reduce 将报错。</p>
+<h5 id="返回值-5"><a href="#返回值-5" class="headerlink" title="返回值"></a>返回值</h5><p>函数累计处理的结果</p>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2020/06/24/web/js/array/%E6%96%B9%E6%B3%95/map/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  map
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2020/06/24/web/js/array/%E5%A4%8D%E5%88%B6/%E5%A4%8D%E5%88%B6/">
+                复制
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			av: AV,
+			el: '#vcomments',
+			notify: false,
+			verify: false,
+			path: window.location.pathname,
+			appId: '',
+			appKey: '',
+			placeholder: '请输入评论',
+			avatar: 'retro',
+			recordIP: false
+		})
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2019-<span id="footerYear"></span> 
+	<a href="/">bin</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>

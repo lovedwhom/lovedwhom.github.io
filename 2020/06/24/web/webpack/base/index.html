@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		web/webpack/base | 
+	 
+	Hexo
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+  
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">Hexo</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+
+		<li class="menu-item">
+			<a href="https://github.com/account" class="menu-item-link" target="_blank">
+				oliverBin
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="https://github.com/lovedwhom" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/hello-world/">
+										hello-world
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										web
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										api
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										BroadcastChannel
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/api/BroadcastChannel/BroadcastChannel/">
+										BroadcastChannel
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css计数器
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E8%AE%A1%E6%95%B0%E5%99%A8/counter-increment/">
+										counter-increment
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E8%AE%A1%E6%95%B0%E5%99%A8/counter-reset/">
+										counter-reset
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E8%AE%A1%E6%95%B0%E5%99%A8/counter/">
+										counter
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css选择器
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/ID%E9%80%89%E6%8B%A9%E5%99%A8/">
+										ID选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E4%BC%AA%E7%B1%BB/">
+										伪类
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8/">
+										元素选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%90%8E%E4%BB%A3%E9%80%89%E6%8B%A9%E5%99%A8/">
+										后代选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%AD%90%E9%80%89%E6%8B%A9%E5%99%A8/">
+										子选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8/">
+										属性选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E7%9B%B8%E9%82%BB%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8/">
+										相邻兄弟选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/">
+										类选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E9%80%9A%E7%94%A8%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8/">
+										通用兄弟选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E9%80%9A%E9%85%8D%E9%80%89%E6%8B%A9%E5%99%A8/">
+										通配选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										tabel table-cel
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/tabel%20table-cel/table/">
+										table
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										html
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										dom
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										宽高
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/dom/%E5%AE%BD%E9%AB%98/dom%E5%85%83%E7%B4%A0%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6/">
+										dom元素宽度和高度
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										window
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										scroll
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/window/scroll/scroll/">
+										scroll
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										ubtitile
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/window/ubtitile/%E6%BB%9A%E5%8A%A8/">
+										滚动
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										window 窗口高度和宽度
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/window/window%20%E7%AA%97%E5%8F%A3%E9%AB%98%E5%BA%A6%E5%92%8C%E5%AE%BD%E5%BA%A6/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6/">
+										宽度和高度
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										js
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										array
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										创建
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%88%9B%E5%BB%BA/%E6%95%B0%E7%BB%84%E5%88%9B%E5%BB%BA/">
+										数组创建
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%88%A4%E6%96%AD%E6%95%B0%E7%BB%84/">
+										判断数组
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										合并
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%90%88%E5%B9%B6/%E5%90%88%E5%B9%B6/">
+										合并
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										复制
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%A4%8D%E5%88%B6/%E5%A4%8D%E5%88%B6/">
+										复制
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										方法
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E6%96%B9%E6%B3%95/map/">
+										map
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95/">
+										方法
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										es6
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/es6/array/">
+										array
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/es6/promise/">
+										promise
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										event Loop
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/event%20Loop/event%20Loop/">
+										event Loop
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/event%20Loop/%E6%A0%88/">
+										栈
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										function
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/function/this/">
+										this
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/function/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/">
+										箭头函数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										操纵符
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/%E6%93%8D%E7%BA%B5%E7%AC%A6/new/">
+										new
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										npm
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/npm/A-npm/">
+										A-npm
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										trivial_knowledge
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/trivial_knowledge/documentElement/">
+										documentElement
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										webpack-cli
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack-cli/00-webpack-cli/">
+										00-webpack-cli
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack-cli/01-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+										01-常用命令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										webpack
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/01-%E5%8D%A0%E4%BD%8D%E7%AC%A6/">
+										01-占位符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/02-import/">
+										02-import
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/03-require/">
+										03-require
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/99-%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93/">
+										99-配置总结
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2020/06/24/web/webpack/base/">
+										base
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										config
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/01-%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/">
+										01-核心概念
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										context
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/context/A-context/">
+										A-context
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										entry
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/entry/A-entry/">
+										A-entry
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										mode
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/mode/A-mode/">
+										A-mode
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										module
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/00-module/">
+										00-module
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/01-noparse/">
+										01-noparse
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										rules
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/rules/00-rules/">
+										00-rules
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/rules/03-parser/">
+										03-parser
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										optimization
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/optimization/A-optimization/">
+										A-optimization
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										output
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/00-output/">
+										00-output
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/05-externals/">
+										05-externals
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/06-target/">
+										06-target
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/07-devtool/">
+										07-devtool
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										plugins
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/plugins/A-plugins/">
+										A-plugins
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										resolve
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/resolve/00-resolve/">
+										00-resolve
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/resolve/01-extensions/">
+										01-extensions
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/resolve/02-alias/">
+										02-alias
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+
+	base
+</h1>
+<div class="article-meta">
+	
+	<span>bin</span>
+	<span>2020-06-24 15:06:45</span>
+    
+		<div id="article-categories">
+            
+		</div>
+    
+</div>
+
+<div id="article-content">
+	<h1 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i webpack webpack-cli -D</span><br></pre></td></tr></table></figure>
+<p>npm i -D 是 npm install –save-dev 的简写<br>安装模块并保存到 package.json 的 devDependencies中</p>
+<h2 id="webpack-config-js-基础"><a href="#webpack-config-js-基础" class="headerlink" title="webpack.config.js 基础"></a>webpack.config.js 基础</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">module.exports &#x3D; &#123;</span><br><span class="line">    entry: &#39;&#39;,               &#x2F;&#x2F; 入口文件</span><br><span class="line">    output: &#123;&#125;,              &#x2F;&#x2F; 出口文件</span><br><span class="line">    module: &#123;&#125;,              &#x2F;&#x2F; 处理对应模块</span><br><span class="line">    plugins: [],             &#x2F;&#x2F; 对应的插件</span><br><span class="line">    devServer: &#123;&#125;,           &#x2F;&#x2F; 开发服务器配置</span><br><span class="line">    mode: &#39;development&#39;      &#x2F;&#x2F; 模式配置</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="入口文件-及-出口文件"><a href="#入口文件-及-出口文件" class="headerlink" title="入口文件 及 出口文件"></a>入口文件 及 出口文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">module.exports &#x3D; &#123;</span><br><span class="line">    &#x2F;&#x2F; 1.写成数组的方式就可以打出多入口文件，不过这里打包后的文件都合成了一个</span><br><span class="line">    &#x2F;&#x2F; entry: [&#39;.&#x2F;src&#x2F;index.js&#39;, &#39;.&#x2F;src&#x2F;login.js&#39;],</span><br><span class="line">    &#x2F;&#x2F; 2.真正实现多入口和多出口需要写成对象的方式</span><br><span class="line">    entry: &#123;</span><br><span class="line">        index: &#39;.&#x2F;src&#x2F;index.js&#39;,</span><br><span class="line">        login: &#39;.&#x2F;src&#x2F;login.js&#39;</span><br><span class="line">    &#125;,</span><br><span class="line">    output: &#123;</span><br><span class="line">        &#x2F;&#x2F; 1. filename: &#39;bundle.js&#39;,</span><br><span class="line">        &#x2F;&#x2F; 2. [name]就可以将出口文件名和入口文件名一一对应</span><br><span class="line">        filename: &#39;[name].js&#39;,      &#x2F;&#x2F; 打包后会生成index.js和login.js文件</span><br><span class="line">        path: path.resolve(&#39;dist&#39;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Html模板"><a href="#Html模板" class="headerlink" title="Html模板"></a>Html模板</h2><h3 id="plugin"><a href="#plugin" class="headerlink" title="plugin"></a>plugin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i html-webpack-plugin -D</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>多页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">plugins: [</span><br><span class="line">      new HtmlWebpackPlugin(&#123;</span><br><span class="line">           template: &#39;.&#x2F;src&#x2F;index.html&#39;,   </span><br><span class="line">           filename: &#39;index.html&#39;,</span><br><span class="line">           chunks: [&#39;index&#39;]   &#x2F;&#x2F; 对应关系,index.js对应的是index.html</span><br><span class="line">       &#125;),</span><br><span class="line">       new HtmlWebpackPlugin(&#123;</span><br><span class="line">           template: &#39;.&#x2F;src&#x2F;login.html&#39;,</span><br><span class="line">           filename: &#39;login.html&#39;,</span><br><span class="line">           chunks: [&#39;login&#39;]   &#x2F;&#x2F; 对应关系,login.js对应的是login.html</span><br><span class="line">       &#125;)</span><br><span class="line"></span><br><span class="line">   ]</span><br></pre></td></tr></table></figure>
+
+<h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><h3 id="loader"><a href="#loader" class="headerlink" title="loader"></a>loader</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm i style-loader css-loader -D</span><br><span class="line">&#x2F;&#x2F; 引入less文件的话，也需要安装对应的loader</span><br><span class="line">npm i less less-loader -D</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">module: &#123;</span><br><span class="line">       rules: [</span><br><span class="line">           &#123;</span><br><span class="line">               test: &#x2F;\.css$&#x2F;,     &#x2F;&#x2F; 解析css</span><br><span class="line">               use: [&#39;style-loader&#39;, &#39;css-loader&#39;] &#x2F;&#x2F; 从右向左解析</span><br><span class="line">               &#x2F;* </span><br><span class="line">                   也可以这样写，这种方式方便写一些配置参数</span><br><span class="line">                   use: [</span><br><span class="line">                       &#123;loader: &#39;style-loader&#39;&#125;,</span><br><span class="line">                       &#123;loader: &#39;css-loader&#39;&#125;</span><br><span class="line">                   ]</span><br><span class="line">               *&#x2F;</span><br><span class="line">           &#125;</span><br><span class="line">       ]</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="拆分css"><a href="#拆分css" class="headerlink" title="拆分css"></a>拆分css</h2><h3 id="plugin-1"><a href="#plugin-1" class="headerlink" title="plugin"></a>plugin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev mini-css-extract-plugin</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置-2"><a href="#配置-2" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">module:&#123;</span><br><span class="line">    rules:[</span><br><span class="line">        &#123;</span><br><span class="line">                test: &#x2F;\.css$&#x2F;,</span><br><span class="line">                use:[</span><br><span class="line">                    &#123;</span><br><span class="line">                        loader: MiniCssExtractPlugin.loader,</span><br><span class="line">                        options: &#123;</span><br><span class="line">                            publicpath:&#39;&#x2F;dist&#x2F;css&#39;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;,&#123;</span><br><span class="line">                        loader: &quot;css-loader&quot;</span><br><span class="line">                    &#125;,&#123;</span><br><span class="line">                        loader: &quot;postcss-loader&quot;</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                test: &#x2F;\.less$&#x2F;,</span><br><span class="line">                use:[</span><br><span class="line">                    &#123;</span><br><span class="line">                        loader: MiniCssExtractPlugin.loader,</span><br><span class="line">                        options: &#123;</span><br><span class="line">                            publicpath:&#39;..&#x2F;&#39;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;,&#123;</span><br><span class="line">                        loader: &quot;css-loader&quot;</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        loader: &quot;postcss-loader&quot;</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        loader: &quot;less-loader&quot;</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">plugins:[</span><br><span class="line"> new MiniCssExtractPlugin(&#123;</span><br><span class="line">            filename: &#39;css&#x2F;[name].[contenthash:8].css&#39;,</span><br><span class="line">            chunkFilename: &#39;css&#x2F;[name].[contenthash:8].css&#39;</span><br><span class="line">        &#125;),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h2 id="添加-css3前缀"><a href="#添加-css3前缀" class="headerlink" title="添加 css3前缀"></a>添加 css3前缀</h2><h3 id="plugin-2"><a href="#plugin-2" class="headerlink" title="plugin"></a>plugin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i postcss-loader autoprefixer -D</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置-3"><a href="#配置-3" class="headerlink" title="配置"></a>配置</h3><h4 id="根目录-新建postcss-config-js"><a href="#根目录-新建postcss-config-js" class="headerlink" title="根目录 新建postcss.config.js"></a>根目录 新建postcss.config.js</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">module.exports &#x3D;&#123;</span><br><span class="line">    plugins:[require(&#39;autoprefixer&#39;)]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>webpack.config.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">module: &#123;</span><br><span class="line">        rules: [</span><br><span class="line">            &#123;</span><br><span class="line">                test: &#x2F;\.css$&#x2F;,</span><br><span class="line">                use: [&#39;style-loader&#39;, &#39;css-loader&#39;, &#39;postcss-loader&#39;]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><h3 id="plugin-3"><a href="#plugin-3" class="headerlink" title="plugin"></a>plugin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i file-loader url-loader -D</span><br></pre></td></tr></table></figure>
+<h3 id="配置-4"><a href="#配置-4" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">module: &#123;</span><br><span class="line">       rules: [</span><br><span class="line">           &#123;</span><br><span class="line">               test: &#x2F;\.(jpe?g|png|gif)$&#x2F;,</span><br><span class="line">               use: [</span><br><span class="line">                   &#123;</span><br><span class="line">                       loader: &#39;url-loader&#39;,</span><br><span class="line">                       options: &#123;</span><br><span class="line">                            esModule:false,</span><br><span class="line">                           limit: 8192,    &#x2F;&#x2F; 小于8k的图片自动转成base64格式，并且不会存在实体图片</span><br><span class="line">                           outputPath: &#39;images&#x2F;&#39;   &#x2F;&#x2F; 图片打包后存放的目录</span><br><span class="line">                       &#125;</span><br><span class="line">                   &#125;</span><br><span class="line">               ]</span><br><span class="line">           &#125;</span><br><span class="line">       ]</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="页面img引用图片"><a href="#页面img引用图片" class="headerlink" title="页面img引用图片"></a>页面img引用图片</h2><h3 id="plugin-4"><a href="#plugin-4" class="headerlink" title="plugin"></a>plugin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i html-withimg-loader -D</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置-5"><a href="#配置-5" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">module: &#123;</span><br><span class="line">        rules: [</span><br><span class="line">            &#123;</span><br><span class="line">                test: &#x2F;\.(htm|html)$&#x2F;,</span><br><span class="line">                use: &#39;html-withimg-loader&#39;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="引用字体图片和svg图片"><a href="#引用字体图片和svg图片" class="headerlink" title="引用字体图片和svg图片"></a>引用字体图片和svg图片</h2><h2 id="plugin-5"><a href="#plugin-5" class="headerlink" title="plugin"></a>plugin</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i file-loader url-loader -D</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置-6"><a href="#配置-6" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">module: &#123;</span><br><span class="line">        rules: [</span><br><span class="line">            &#123;</span><br><span class="line">                test: &#x2F;\.(eot|ttf|woff|svg)$&#x2F;,</span><br><span class="line">                use: &#39;file-loader&#39;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="转移Es6"><a href="#转移Es6" class="headerlink" title="转移Es6"></a>转移Es6</h2><h3 id="plugin-6"><a href="#plugin-6" class="headerlink" title="plugin"></a>plugin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i @babel&#x2F;core babel-loader @babel&#x2F;preset-env -D</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置-7"><a href="#配置-7" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">module.exports &#x3D; &#123;</span><br><span class="line">    module: &#123;</span><br><span class="line">        rules: [</span><br><span class="line">            &#123;</span><br><span class="line">                test:&#x2F;\.js$&#x2F;,</span><br><span class="line">                use: &#123;</span><br><span class="line">                    loader: &#39;babel-loader&#39;,</span><br><span class="line">                    &#x2F;&#x2F; 配置选项里的presets</span><br><span class="line">                    &#x2F;&#x2F; 包含ES6还有之后的版本和那些仅仅是草案的内容</span><br><span class="line">                    options: &#123;</span><br><span class="line">                        presets: [&#39;@babel&#x2F;preset-env&#39;]</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                include: &#x2F;src&#x2F;,          &#x2F;&#x2F; 只转化src目录下的js</span><br><span class="line">                exclude: &#x2F;node_modules&#x2F;  &#x2F;&#x2F; 排除掉node_modules，优化打包速度</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="清空打包文件见"><a href="#清空打包文件见" class="headerlink" title="清空打包文件见"></a>清空打包文件见</h2><h3 id="plugin-7"><a href="#plugin-7" class="headerlink" title="plugin"></a>plugin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i clean-webpack-plugin -D</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置-8"><a href="#配置-8" class="headerlink" title="配置"></a>配置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let CleanWebpackPlugin &#x3D; require(&#39;clean-webpack-plugin&#39;);</span><br><span class="line"></span><br><span class="line">module.exports &#x3D; &#123;</span><br><span class="line">    plugins: [</span><br><span class="line">        &#x2F;&#x2F; 打包前先清空</span><br><span class="line">        new CleanWebpackPlugin(&#39;dist&#39;)  </span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="别名"><a href="#别名" class="headerlink" title="别名"></a>别名</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">module.exports &#x3D; &#123;</span><br><span class="line">    resolve: &#123;</span><br><span class="line">        &#x2F;&#x2F; 别名</span><br><span class="line">        alias: &#123;</span><br><span class="line">            $: &#39;.&#x2F;src&#x2F;jquery.js&#39;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#x2F;&#x2F; 省略后缀</span><br><span class="line">        extensions: [&#39;.js&#39;, &#39;.json&#39;, &#39;.css&#39;]</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="提取公共代码"><a href="#提取公共代码" class="headerlink" title="提取公共代码"></a>提取公共代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">module.exports &#x3D; &#123;</span><br><span class="line">    entry: &#123;</span><br><span class="line">        a: &#39;.&#x2F;src&#x2F;a.js&#39;,</span><br><span class="line">        b: &#39;.&#x2F;src&#x2F;b.js&#39;</span><br><span class="line">    &#125;,</span><br><span class="line">    output: &#123;</span><br><span class="line">        filename: &#39;[name].js&#39;,</span><br><span class="line">        path: path.resolve(&#39;dust&#39;)</span><br><span class="line">    &#125;,</span><br><span class="line">    &#x2F;&#x2F; 提取公共代码</span><br><span class="line">+   optimization: &#123;</span><br><span class="line">        splitChunks: &#123;</span><br><span class="line">            cacheGroups: &#123;</span><br><span class="line">                vendor: &#123;   &#x2F;&#x2F; 抽离第三方插件</span><br><span class="line">                    test: &#x2F;node_modules&#x2F;,   &#x2F;&#x2F; 指定是node_modules下的第三方包</span><br><span class="line">                    chunks: &#39;initial&#39;,</span><br><span class="line">                    name: &#39;vendor&#39;,  &#x2F;&#x2F; 打包后的文件名，任意命名    </span><br><span class="line">                    &#x2F;&#x2F; 设置优先级，防止和自定义的公共代码提取时被覆盖，不进行打包</span><br><span class="line">                    priority: 10    </span><br><span class="line">                &#125;,</span><br><span class="line">                utils: &#123; &#x2F;&#x2F; 抽离自己写的公共代码，utils这个名字可以随意起</span><br><span class="line">                    chunks: &#39;initial&#39;,</span><br><span class="line">                    name: &#39;utils&#39;,  &#x2F;&#x2F; 任意命名</span><br><span class="line">                    minSize: 0    &#x2F;&#x2F; 只要超出0字节就生成一个新包</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">+   &#125;,</span><br><span class="line">    plugins: [</span><br><span class="line">        new HtmlWebpackPlugin(&#123;</span><br><span class="line">            filename: &#39;a.html&#39;,</span><br><span class="line">            template: &#39;.&#x2F;src&#x2F;index.html&#39;,  &#x2F;&#x2F; 以index.html为模板</span><br><span class="line">+           chunks: [&#39;vendor&#39;, &#39;a&#39;]</span><br><span class="line">        &#125;),</span><br><span class="line">        new HtmlWebpackPlugin(&#123;</span><br><span class="line">            filename: &#39;b.html&#39;,</span><br><span class="line">            template: &#39;.&#x2F;src&#x2F;index.html&#39;,  &#x2F;&#x2F; 以index.html为模板</span><br><span class="line">+           chunks: [&#39;vendor&#39;, &#39;b&#39;]</span><br><span class="line">        &#125;)</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2020/06/24/web/webpack/01-%E5%8D%A0%E4%BD%8D%E7%AC%A6/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  01-占位符
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2020/06/24/web/webpack/config/optimization/A-optimization/">
+                config
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			av: AV,
+			el: '#vcomments',
+			notify: false,
+			verify: false,
+			path: window.location.pathname,
+			appId: '',
+			appKey: '',
+			placeholder: '请输入评论',
+			avatar: 'retro',
+			recordIP: false
+		})
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2019-<span id="footerYear"></span> 
+	<a href="/">bin</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>

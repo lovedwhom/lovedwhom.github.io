@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		web/js/event Loop/event Loop | 
+	 
+	Hexo
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+  
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">Hexo</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+
+		<li class="menu-item">
+			<a href="https://github.com/account" class="menu-item-link" target="_blank">
+				oliverBin
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="https://github.com/lovedwhom" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/hello-world/">
+										hello-world
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										web
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										api
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										BroadcastChannel
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/api/BroadcastChannel/BroadcastChannel/">
+										BroadcastChannel
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css计数器
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E8%AE%A1%E6%95%B0%E5%99%A8/counter-increment/">
+										counter-increment
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E8%AE%A1%E6%95%B0%E5%99%A8/counter-reset/">
+										counter-reset
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E8%AE%A1%E6%95%B0%E5%99%A8/counter/">
+										counter
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										css选择器
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/ID%E9%80%89%E6%8B%A9%E5%99%A8/">
+										ID选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E4%BC%AA%E7%B1%BB/">
+										伪类
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%85%83%E7%B4%A0%E9%80%89%E6%8B%A9%E5%99%A8/">
+										元素选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%90%8E%E4%BB%A3%E9%80%89%E6%8B%A9%E5%99%A8/">
+										后代选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%AD%90%E9%80%89%E6%8B%A9%E5%99%A8/">
+										子选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9%E5%99%A8/">
+										属性选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E7%9B%B8%E9%82%BB%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8/">
+										相邻兄弟选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E7%B1%BB%E9%80%89%E6%8B%A9%E5%99%A8/">
+										类选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E9%80%9A%E7%94%A8%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8/">
+										通用兄弟选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/css%E9%80%89%E6%8B%A9%E5%99%A8/%E9%80%9A%E9%85%8D%E9%80%89%E6%8B%A9%E5%99%A8/">
+										通配选择器
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										tabel table-cel
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/css/tabel%20table-cel/table/">
+										table
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										html
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										dom
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										宽高
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/dom/%E5%AE%BD%E9%AB%98/dom%E5%85%83%E7%B4%A0%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6/">
+										dom元素宽度和高度
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										window
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										scroll
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/window/scroll/scroll/">
+										scroll
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										ubtitile
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/window/ubtitile/%E6%BB%9A%E5%8A%A8/">
+										滚动
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										window 窗口高度和宽度
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/html/window/window%20%E7%AA%97%E5%8F%A3%E9%AB%98%E5%BA%A6%E5%92%8C%E5%AE%BD%E5%BA%A6/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6/">
+										宽度和高度
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										js
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										array
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										创建
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%88%9B%E5%BB%BA/%E6%95%B0%E7%BB%84%E5%88%9B%E5%BB%BA/">
+										数组创建
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%88%A4%E6%96%AD%E6%95%B0%E7%BB%84/">
+										判断数组
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										合并
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%90%88%E5%B9%B6/%E5%90%88%E5%B9%B6/">
+										合并
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										复制
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E5%A4%8D%E5%88%B6/%E5%A4%8D%E5%88%B6/">
+										复制
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										方法
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E6%96%B9%E6%B3%95/map/">
+										map
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/array/%E6%96%B9%E6%B3%95/%E6%96%B9%E6%B3%95/">
+										方法
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										es6
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/es6/array/">
+										array
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/es6/promise/">
+										promise
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										event Loop
+									</a>
+									
+							<ul>
+								<li class="file active">
+									<a href="/2020/06/24/web/js/event%20Loop/event%20Loop/">
+										event Loop
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/event%20Loop/%E6%A0%88/">
+										栈
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										function
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/function/this/">
+										this
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/function/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/">
+										箭头函数
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										操纵符
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/js/%E6%93%8D%E7%BA%B5%E7%AC%A6/new/">
+										new
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										npm
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/npm/A-npm/">
+										A-npm
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										trivial_knowledge
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/trivial_knowledge/documentElement/">
+										documentElement
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										webpack-cli
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack-cli/00-webpack-cli/">
+										00-webpack-cli
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack-cli/01-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+										01-常用命令
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										webpack
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/01-%E5%8D%A0%E4%BD%8D%E7%AC%A6/">
+										01-占位符
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/02-import/">
+										02-import
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/03-require/">
+										03-require
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/99-%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93/">
+										99-配置总结
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/base/">
+										base
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										config
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/01-%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5/">
+										01-核心概念
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										context
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/context/A-context/">
+										A-context
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										entry
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/entry/A-entry/">
+										A-entry
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										mode
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/mode/A-mode/">
+										A-mode
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										module
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/00-module/">
+										00-module
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/01-noparse/">
+										01-noparse
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										rules
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/rules/00-rules/">
+										00-rules
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/module/rules/03-parser/">
+										03-parser
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										optimization
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/optimization/A-optimization/">
+										A-optimization
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										output
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/00-output/">
+										00-output
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/05-externals/">
+										05-externals
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/06-target/">
+										06-target
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/output/07-devtool/">
+										07-devtool
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										plugins
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/plugins/A-plugins/">
+										A-plugins
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										resolve
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/resolve/00-resolve/">
+										00-resolve
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/resolve/01-extensions/">
+										01-extensions
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/06/24/web/webpack/config/resolve/02-alias/">
+										02-alias
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+
+	event Loop
+</h1>
+<div class="article-meta">
+	
+	<span>bin</span>
+	<span>2020-06-24 15:06:45</span>
+    
+		<div id="article-categories">
+            
+		</div>
+    
+</div>
+
+<div id="article-content">
+	<h1 id="event-Loop"><a href="#event-Loop" class="headerlink" title="event Loop"></a>event Loop</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>event loop </p>
+<h2 id="js是单线程的"><a href="#js是单线程的" class="headerlink" title="js是单线程的"></a>js是单线程的</h2><ul>
+<li>因为是单线程，所以所有任务都需要排队，前一个任务结束，后一个任务才能执行，如果前一个任务花费时间较长，后一个任务等待时间也随之变成</li>
+<li>js可以做到先把等待中的任务放一边，去处理后面的任务</li>
+<li>于是又有任务分为两种，一种是同步任务另一种是异步任务:<ul>
+<li>同步任务很简单，前面的任务完成后面才能执行，一个接一个的执行任务</li>
+<li>异步任务不占用主线程，直接进入’任务队列’中，等任务队列通知主线程，某个任务可以执行了，才会进入主线程执行</li>
+</ul>
+</li>
+</ul>
+<p>js主要是与用户交互以及操作Dom 这决定了他只能是单线程，否则一个线程再dom上添加内容。另一个删除了这个节点，这事浏览器以哪个为准？<br>所以，为了避免复杂行，js只能是单线程</p>
+<h2 id="任务队列"><a href="#任务队列" class="headerlink" title="任务队列"></a>任务队列</h2><p>单线程就以位置，所有任务都需要排队，前一个结束，才会执行后一个任务。如果一个任务耗时很长，后一个任务不得不一直等着。</p>
+<p>于是，所有任务可以分为两种，一种是同步任务，另一种是异步任务，同步任务指的是，在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务；异步任务指的是，不进入主线程，而进入任务队列，只有任务队列通知主线程，某个异步任务可以执行了，任务才会进入主线程执行</p>
+<h3 id="异步执行机制-同步执行也是如此，可以视为没有异步任务的异步执行"><a href="#异步执行机制-同步执行也是如此，可以视为没有异步任务的异步执行" class="headerlink" title="异步执行机制(同步执行也是如此，可以视为没有异步任务的异步执行)"></a>异步执行机制(同步执行也是如此，可以视为没有异步任务的异步执行)</h3><ol>
+<li>所有同步任务都在主线程上形成一个<a href="''">执行栈</a></li>
+<li>主线程之外，还存在一个’任务队列‘。只有异步任务有了运行结果，就在’任务队列’之中放置一个事件</li>
+<li>一旦’执行栈’中的所有同步任务执行完毕，系统就会读取’任务队列’，看看里面有哪些事件。那些对应的异步任务，于是结束等待状态，进入执行栈，开始执行。</li>
+<li>主线程不断重复上面的第三步。</li>
+</ol>
+<p>下面是主线程和任务队列的示意图</p>
+<p><img src="./assets/1626d45b82d34259.jpg" alt="主线程和任务队列示意图"><br><img src="./assets/1038932-20180831111726925-1117521653.png" alt="任务队列"></p>
+<p>只要主线程空了，就回去读取’任务队列’，这就是javascript的运行机制。这个过程会不断重复。</p>
+<h2 id="事件和回调函数"><a href="#事件和回调函数" class="headerlink" title="事件和回调函数"></a>事件和回调函数</h2><p>“任务队列”是一个事件的队列（也可以理解成消息的队列），IO设备完成一项任务，就在”任务队列”中添加一个事件，表示相关的异步任务可以进入”执行栈”了。主线程读取”任务队列”，就是读取里面有哪些事件。</p>
+<p>“任务队列”中的事件，除了IO设备的事件以外，还包括一些用户产生的事件（比如鼠标点击、页面滚动等等）。只要指定过回调函数，这些事件发生时就会进入”任务队列”，等待主线程读取。</p>
+<p>所谓”回调函数”（callback），就是那些会被主线程挂起来的代码。异步任务必须指定回调函数，当主线程开始执行异步任务，就是执行对应的回调函数。</p>
+<p>“任务队列”是一个先进先出的数据结构，排在前面的事件，优先被主线程读取。主线程的读取过程基本上是自动的，只要执行栈一清空，”任务队列”上第一位的事件就自动进入主线程。但是，由于存在后文提到的”定时器”功能，主线程首先要检查一下执行时间，某些事件只有到了规定的时间，才能返回主线程。</p>
+<h2 id="Event-Loop"><a href="#Event-Loop" class="headerlink" title="Event Loop"></a>Event Loop</h2><p>主线程中’任务队列’读取事件,这个过程是循环不断的，所以整个的这种运行机制又称为Event loop (事件循环)</p>
+<p><img src="./assets/20170214104421_266.gif" alt="Event loop"></p>
+<h2 id="异步任务执行机制"><a href="#异步任务执行机制" class="headerlink" title="异步任务执行机制"></a>异步任务执行机制</h2><p>异步任务有宏任务和微任务  </p>
+<p><img src="./assets/1038932-20190218164559442-1467085283.png" alt="异步任务"></p>
+<h3 id="宏任务"><a href="#宏任务" class="headerlink" title="宏任务"></a>宏任务</h3><p>事件队列中的每个事件都是一个macrotask</p>
+<p>优先级：主代码块 &gt; setImmediate &gt; MessageChannel &gt; setTimeout / setInterval</p>
+<p>比如：setImmediate指定的回调函数，总是排在setTimeout前面</p>
+<p>3.微任务包括：</p>
+<p>优先级：process.nextTick &gt; Promise &gt; MutationObserver</p>
+<p>下面这个代码输出结果是什么？<br><img src="./assets/1038932-20190218164856734-1910503305.png" alt="异步任务 执行结果"><br>主程序和和settimeout都是宏任务，两个promise是微任务</p>
+<p>第一个宏任务（主程序）执行完，执行全部的微任务（两个promise），再执行下一个宏任务（settimeout），所以结果为：</p>
+<p><img src="./assets/1038932-20190218164940621-1219544593.png" alt="异步任务 执行结果2"></p>
+<p>参考 <a href="https://juejin.im/post/5b73d7a6518825610072b42b" target="_blank" rel="noopener">微任务、宏任务与Event-Loop</a></p>
+<!-- [Event loop]: https://user-gold-cdn.xitu.io/2017/2/26/ebf7f19838c81c499dfafaaf63303252?imageView2/0/w/1280/h/960/format/webp/ignore-error/1 -->
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2020/06/24/web/api/BroadcastChannel/BroadcastChannel/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  BroadcastChannel
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2020/06/24/web/js/event%20Loop/%E6%A0%88/">
+                栈
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			av: AV,
+			el: '#vcomments',
+			notify: false,
+			verify: false,
+			path: window.location.pathname,
+			appId: '',
+			appKey: '',
+			placeholder: '请输入评论',
+			avatar: 'retro',
+			recordIP: false
+		})
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2019-<span id="footerYear"></span> 
+	<a href="/">bin</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
